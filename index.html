@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="google-site-verification" content="YU7crPhkfCzt2SVFXZ2VzKR4EZu3Tiec20Wm7K3w7e4" />
+
+    <title>Koraa</title>
+    <link rel="icon" href="images/favicon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/vendor/venobox/venobox.min.css">
+    <link rel="stylesheet" href="/assets/vendor/slickslider/slick.min.css">
+    <link rel="stylesheet" href="/assets/vendor/niceselect/nice-select.min.css">
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/home-grid.css">
+
+</head>
+
+<body>
+
+    <div id="overlay" class="loader-overlay">
+        <div id="loader" class="loader"></div>
+    </div>
+
+    <button class="backtop ri-arrow-up-line" onclick="scrollToTop()" id="backToTopBtn"></button>
+
+    <nav id="navbar"></nav>
+
+    <aside id="category-mobile"></aside>
+
+    <aside id="notif"></aside>
+
+    <aside id="mobile-nav"></aside>
+
+    <nav id="mobile-menu"></nav>
+
+    <section class="banner-part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 order-1 order-lg-0 order-xl-0 mobile">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-12">
+                            <div class="home-grid-promo">
+                                <a href="#">
+                                    <img src="/assets/img/banner/koraa.png" alt="koraa">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-12">
+                            <div class="home-grid-promo">
+                                <a href="#">
+                                    <img src="/assets/img/banner/koraa.png" alt="koraa">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 order-0 order-lg-1 order-xl-1">
+                    <div class="home-grid-slider slider-arrow slider-dots">
+                        <a href="#">
+                            <img src="/assets/img/slider/1.png" alt="koraa">
+                        </a>
+                        <a href="#">
+                            <img src="/assets/img/slider/2.png" alt="koraa">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section recent-part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>Trending items</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 koraitems">
+
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-btn-25">
+                        <a href="/p/category/source-code/" class="btn btn-outline">
+                            <i class="fas fa-eye"></i>
+                            <span>show more</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section promo-part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="promo-img">
+                        <a href="">
+                            <img src="/assets/img/promo/koraa.png" alt="koraa">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Error --
+    <section class="section countdown-part">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mx-auto">
+                    <div class="countdown-content">
+                        <h3>special discount offer for vegetable items</h3>
+                        <p>Reprehenderit sed quod autem molestiae aut modi minus veritatis iste dolorum suscipit quis
+                            voluptatum fugiat mollitia quia minima</p>
+                        <div class="countdown countdown-clock" data-countdown="2023/12/22"><span
+                                class="countdown-time"><span>00</span><small>days</small></span><span
+                                class="countdown-time"><span>00</span><small>hours</small></span><span
+                                class="countdown-time"><span>00</span><small>minutes</small></span><span
+                                class="countdown-time"><span>00</span><small>seconds</small></span></div><a
+                            href="shop-4column.html" class="btn btn-inline"><i
+                                class="fas fa-shopping-basket"></i><span>shop now</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5">
+                    <div class="countdown-img"><img src="images/countdown.png" alt="countdown">
+                        <div class="countdown-off"><span>20%</span><span>off</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Error -->
+
+    <footer id="footer"></footer>
+
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-analytics.js"></script>
+    <script src="/assets/db/db.js"></script>
+    <script src="/assets/db/items/rekomendasi/kora.min.js"></script>
+
+    <script src="/assets/vendor/bootstrap/jquery-1.12.4.min.js"></script>
+    <script src="/assets/vendor/bootstrap/popper.min.js"></script>
+    <script src="/assets/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="/assets/vendor/countdown/countdown.min.js"></script>
+    <script src="/assets/vendor/niceslect/nice-select.min.js"></script>
+    <script src="/assets/vendor/slickslider/slick.min.js"></script>
+    <script src="/assets/vendor/venobox/venobox.min.js"></script>
+    <script src="/assets/js/nice-select.js"></script>
+    <script src="/assets/js/countdown.js"></script>
+    <script src="/assets/js/accordion.js"></script>
+    <script src="/assets/js/venobox.js"></script>
+    <script src="/assets/js/slick.js"></script>
+    <script src="/assets/js/main.js"></script>
+
+    <script src="/assets/data/kora.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<aside class="category-sidebar">
+    <div class="category-header">
+        <h4 class="category-title">
+            <i class="fas fa-align-left"></i>
+            <span>categories</span>
+        </h4>
+        <button class="category-close">
+            <i class="ri-close-line"></i>
+        </button>
+    </div>
+    <ul class="category-list">
+        <li class="category-item">
+            <a href="/items/mobile" class="category-link">
+                <span>Mobile</span>
+            </a>
+        </li>
+
+        <li class="category-item">
+            <a href="/items/logo" class="category-link">
+                <span>Logo</span>
+            </a>
+        </li>
+
+        <li class="category-item">
+            <a href="/items/product-design" class="category-link">
+                <span>Product Design</span>
+            </a>
+        </li>
+
+        <li class="category-item">
+            <a href="/items/web-design" class="category-link">
+                <span>Web Design</span>
+            </a>
+        </li>
+    </ul>
+    <div class="category-footer">
+        <p>All Rights Reserved by <a href="/">Koraa</a></p>
+    </div>
+</aside>
+
+
+<div id="script-container"></div>
+
+  <script>
+    // Membuat elemen <script> baru
+    var script = document.createElement('script');
+    
+    // Mengatur atribut src dengan URL script yang ingin Anda sembunyikan
+    script.src = '/assets/data/kora.min.js';
+
+    // Mengubah properti style untuk menyembunyikan elemen script
+    script.style.display = 'none';
+
+    // Menambahkan elemen script ke dalam elemen container
+    document.getElementById('script-container').appendChild(script);
+  </script>
